@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{391CADC3-E01B-44BF-AE98-A5DCD9E34EA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLiBanHang_BUS</RootNamespace>
+    <AssemblyName>QuanLiBanHang_BUS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoGiaBUS.cs" />
+    <Compile Include="DonDatHangBUS.cs" />
+    <Compile Include="DonViBUS.cs" />
+    <Compile Include="DonViTinhBUS.cs" />
+    <Compile Include="HoaDonBUS.cs" />
+    <Compile Include="KhachHangBUS.cs" />
+    <Compile Include="MaHoa.cs" />
+    <Compile Include="NhanNgonNguBUS.cs" />
+    <Compile Include="NhanVienBUS.cs" />
+    <Compile Include="NhomSanPhamBUS.cs" />
+    <Compile Include="PhieuNhapBUS.cs" />
+    <Compile Include="PhieuThuBUS.cs" />
+    <Compile Include="PhieuXuatBUS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPhamBUS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLiBanHang_BDO\QuanLiBanHang_BDO.csproj">
+      <Project>{0fae6e4a-a1eb-485d-b526-f6cf5509277e}</Project>
+      <Name>QuanLiBanHang_BDO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLiBanHang_DAL\QuanLiBanHang_DAL.csproj">
+      <Project>{fd54414b-d062-4f19-9689-0739fe332d91}</Project>
+      <Name>QuanLiBanHang_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

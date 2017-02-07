@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD54414B-D062-4F19-9689-0739FE332D91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuanLiBanHang_DAL</RootNamespace>
+    <AssemblyName>QuanLiBanHang_DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaoGiaDAL.cs" />
+    <Compile Include="DonDatHangDAL.cs" />
+    <Compile Include="DonViDAL.cs" />
+    <Compile Include="DonViTinhDAL.cs" />
+    <Compile Include="HoaDonDAL.cs" />
+    <Compile Include="KhachHangDAL.cs" />
+    <Compile Include="Model\BaoCaoNo.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaoCaoNo_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaoCaoTon.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaoCaoTon_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaoGia.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BaoGia_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DonDatHang.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DonDatHang_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DonVi.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DonViTinh.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HoaDon.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HoaDon_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\KhachHang.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NgonNgu.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NhanNgonNgu.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NhanVien.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NhomSanPham.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PhieuNhap.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PhieuNhap_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PhieuThuTien.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PhieuXuat.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PhieuXuat_CT.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuanLiBanHangModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLiBanHangModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuanLiBanHangModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuanLiBanHangModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanLiBanHangModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuyenHan.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SanPham.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sp_helpdiagrams_Result.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\sysdiagram.cs">
+      <DependentUpon>QuanLiBanHangModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NhanNgonNguDAL.cs" />
+    <Compile Include="NhanVienDAL.cs" />
+    <Compile Include="NhomSanPhamDAL.cs" />
+    <Compile Include="PhieuNhapDAL.cs" />
+    <Compile Include="PhieuThuDAL.cs" />
+    <Compile Include="PhieuXuatDAL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SanPhamDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\QuanLiBanHang_BDO\QuanLiBanHang_BDO.csproj">
+      <Project>{0fae6e4a-a1eb-485d-b526-f6cf5509277e}</Project>
+      <Name>QuanLiBanHang_BDO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <EntityDeploy Include="Model\QuanLiBanHangModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QuanLiBanHangModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Model\QuanLiBanHangModel.edmx.diagram">
+      <DependentUpon>QuanLiBanHangModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\QuanLiBanHangModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLiBanHangModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLiBanHangModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\QuanLiBanHangModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QuanLiBanHangModel.edmx</DependentUpon>
+      <LastGenOutput>QuanLiBanHangModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

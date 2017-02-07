@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bea4bf0775434fdcbcbfa661e2330de6" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLiBanHangModel.BaoCaoNo" Width="1.5" PointX="0.2528959215864986" PointY="26.502719057026653" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.BaoCaoNo_CT" Width="1.5" PointX="9.9032553983401765" PointY="12.771929121004385" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.BaoCaoTon" Width="1.5" PointX="6.0180028555998586" PointY="8.1774754115275456" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.BaoCaoTon_CT" Width="1.5" PointX="0.43154124563166" PointY="2.0687880972720629" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.BaoGia" Width="1.5" PointX="7.29819578831" PointY="5.9415299175034884" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.BaoGia_CT" Width="1.5" PointX="7.5688558405120183" PointY="29.153341664538413" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.DonDatHang" Width="1.5" PointX="1.7286311843100151" PointY="26.720940498039564" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.DonDatHang_CT" Width="1.5" PointX="11.744652449965781" PointY="6.1240184931662016" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.DonVi" Width="1.5" PointX="4.09392956089877" PointY="11.757552197090142" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.DonViTinh" Width="1.5" PointX="8.6877218134178413" PointY="8.78701052478841" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.HoaDon" Width="1.5" PointX="0.16091830290896741" PointY="14.615029595147366" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.HoaDon_CT" Width="1.5" PointX="3.58259621801907" PointY="0.40552669782448869" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.KhachHang" Width="1.5" PointX="8.6372478644537036" PointY="4.1360452194400343" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.NgonNgu" Width="1.5" PointX="5.3202631610074373" PointY="19.967888230442949" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.NhanNgonNgu" Width="1.5" PointX="7.53413004592719" PointY="14.268178126899608" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.NhanVien" Width="1.5" PointX="2.8482425263376174" PointY="12.051063677319821" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.NhomSanPham" Width="1.5" PointX="8.5913597217720756" PointY="30.223580538399322" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.PhieuNhap" Width="1.5" PointX="4.27640343656596" PointY="5.530106547069785" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.PhieuNhap_CT" Width="1.5" PointX="5.5355743214188022" PointY="20.838436434435863" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.PhieuThuTien" Width="1.5" PointX="9.0984653500367259" PointY="6.2583881347712076" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.PhieuXuat" Width="1.5" PointX="8.893834282128994" PointY="24.490232657869456" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.PhieuXuat_CT" Width="1.5" PointX="11.413854930276914" PointY="3.1263617589726866" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.QuyenHan" Width="1.5" PointX="2.1510149939688925" PointY="29.250916286022829" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.SanPham" Width="1.5" PointX="5.196718451192937" PointY="7.6752946412541414" />
+        <EntityTypeShape EntityType="QuanLiBanHangModel.sysdiagram" Width="1.5" PointX="3.9337830468703916" PointY="30.437824337947102" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__BaoCaoNo__MaBaoCao" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__BaoCaoNo__NhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__BaoCaoNo___Khach" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__BaoCaoTon__NhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_BaoCaoTon_MaBaoCao" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_BaoCaoTon_MaSanPham" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_BaoGia_MaBaoGia" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_BaoGia_NhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_BaoGia_MaSanPham" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__DonDatHan__Khach__3C34F16F" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__DonDatHan__MaDon__40058253" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__DonDatHan__NhanV__3D2915A8" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__HoaDon__DonHang__4D5F7D71" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK__DonDatHan__MaSan__40F9A68C" />
+        <AssociationConnector Association="QuanLiBanHangModel.fk_DonViTinh" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_HoaDon_MaHoaDon" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_HoaDon_MaKhachHang" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_HoaDon_MaNhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuXuat_HoaDon" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_HoaDon_MaSanPham" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuThuTien_KhachHang" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuXuat_KhachHang" />
+        <AssociationConnector Association="QuanLiBanHangModel.fk_NhanNgonNgu_NgonNgu" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuNhap_NhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuThuTien_NhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuXuat_NhanVien" />
+        <AssociationConnector Association="QuanLiBanHangModel.fk_QuyenHan" />
+        <AssociationConnector Association="QuanLiBanHangModel.fk_NhomSanPham" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuNhap_MaPhieuNhap" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuNhap_MaSanPham" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuXuat_MaPhieuXuat" />
+        <AssociationConnector Association="QuanLiBanHangModel.FK_PhieuXuat_MaSanPham" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
