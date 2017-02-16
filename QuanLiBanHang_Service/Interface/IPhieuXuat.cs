@@ -16,5 +16,25 @@ namespace QuanLiBanHang_Service.Interface
         [OperationContract]
         [FaultContract(typeof(Exception))]
         DataSet PhieuXuat_GetPhieuXuat(PhieuXuat inp, string swhere);
+
+        [OperationContract]
+        [FaultContract(typeof(Exception))]
+        List<PhieuXuatCT> PhieuXuat_LoadChiTiet(string mapx);
+
+        [OperationContract]
+        [FaultContract(typeof(Exception))]
+        bool PhieuXuat_Insert(PhieuXuat inp);
+
+        [OperationContract]
+        [FaultContract(typeof(Exception))]
+        bool PhieuXuat_Update(PhieuXuat inp);
+
+        [OperationContract]
+        [FaultContract(typeof(Exception))]
+        bool PhieuXuat_Delete(string mapx);
+
+        [OperationContract]
+        [FaultContract(typeof(Exception))]
+        string PhieuXuat_GetNewID(int year, int month);
     }
 }

@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLiBanHang_BDO", "QuanLiBanHang_BDO\QuanLiBanHang_BDO.csproj", "{0FAE6E4A-A1EB-485D-B526-F6CF5509277E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLiBanHang_DAL", "QuanLiBanHang_DAL\QuanLiBanHang_DAL.csproj", "{FD54414B-D062-4F19-9689-0739FE332D91}"
@@ -13,6 +15,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "BanHangService", "http://lo
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{15b3e0d2-6217-493a-a690-158c497f5318}|QuanLiBanHang_Service.dll;{0FAE6E4A-A1EB-485D-B526-F6CF5509277E}|QuanLiBanHang_BDO.dll;{391CADC3-E01B-44BF-AE98-A5DCD9E34EA7}|QuanLiBanHang_BUS.dll;{FD54414B-D062-4F19-9689-0739FE332D91}|QuanLiBanHang_DAL.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_29535"
 		Debug.AspNetCompiler.PhysicalPath = "BanHangService\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_29535\"
