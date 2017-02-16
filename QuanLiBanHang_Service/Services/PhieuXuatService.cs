@@ -25,5 +25,60 @@ namespace QuanLiBanHang_Service
                 throw ex;
             }
         }
+        public List<PhieuXuatCT> PhieuXuat_LoadChiTiet(string mapx)
+        {
+            try
+            {
+                return PhieuXuat_bus.LoadChiTiet(mapx);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public bool PhieuXuat_Insert(PhieuXuat inp)
+        {
+            try
+            {
+                return PhieuXuat_bus.Insert(inp);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public bool PhieuXuat_Update(PhieuXuat inp)
+        {
+            try
+            {
+                return PhieuXuat_bus.Update(inp);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public bool PhieuXuat_Delete(string mapx)
+        {
+            try
+            {
+                return PhieuXuat_bus.Delete(mapx);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+        public string PhieuXuat_GetNewID(int year, int month)
+        {
+            try
+            {
+                return PhieuXuat_bus.GetNewID(year, month);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }
